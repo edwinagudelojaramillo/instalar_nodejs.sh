@@ -7,7 +7,9 @@ Modo de Uso:  ./instalar_nodejs.sh [Opciones]
 [Opciones]
 
 --lts
+
 --current
 
-Recuerde que si instala nodeJS atravez de este script, reemplazara cualquier version que tenga instalada en su equipo
+Recuerde que si instala nodeJS atravez de este script, reemplazara cualquier version que tenga instalada en su equipo.
+
 Este Instalador, Descarga e Instala Node.js desde la pagina oficial de nodejs.org
