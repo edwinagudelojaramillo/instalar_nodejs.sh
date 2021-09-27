@@ -26,49 +26,49 @@ then
 
         if [ $1 = --lts ]
         then
-        echo "Instalando Version LTS {v14.17.0}"
-            wget 'https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz'
-            tar -xvf node-v14.17.0-linux-x64.tar.xz
-            rm -f node-v14.17.0-linux-x64.tar.xz
-            sudo cp -rf node-v14.17.0-linux-x64/* /usr/
-        rm -rf  node-v14.17.0-linux-x64
+        echo "Instalando Version LTS {v14.17.6}"
+            wget 'https://nodejs.org/dist/v14.17.6/node-v14.17.6-linux-x64.tar.xz'
+            tar -xvf node-v14.17.6-linux-x64.tar.xz
+            rm -f node-v14.17.6-linux-x64.tar.xz
+            sudo cp -rf node-v14.17.6-linux-x64/* /usr/
+            rm -rf  node-v14.17.6-linux-x64
         fi
 
         if [ $1 = --current ]
         then
-            echo "Instalando Version Current {v16.3.0}"
-            wget 'https://nodejs.org/dist/v14.17.0/node-v16.3.0-linux-x64.tar.xz'
-            tar -xvf node-v16.3.0-linux-x64.tar.xz
-            rm -f node-v16.3.0-linux-x64.tar.xz
-            sudo cp -r node-v16.3.0-linux-x64/* /usr/
-        rm -rf node-v16.3.0-linux-x64
+            echo "Instalando Version Current {v16.10.0}"
+            wget 'https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-x64.tar.xz'
+            tar -xvf node-v16.10.0-linux-x64.tar.xz
+            rm -f node-v16.10.0-linux-x64.tar.xz
+            sudo cp -r node-v16.10.0-linux-x64/* /usr/
+            rm -rf node-v16.10.0-linux-x64
         fi
     fi
 
 else
     echo "Seleccionar version:"
-    echo " 1· LTS {v14.17.0}"
-    echo " 2· Current {v16.3.0}"
+    echo " 1· LTS {v14.17.6}"
+    echo " 2· Current {v16.10.0}"
     read i
     echo $i
     if [ $i ]
     then
         if [ $i = 1 ]
         then
-            echo "Instalando Version LTS {v14.17.0}"
-            wget 'https://nodejs.org/dist/v14.17.0/node-v14.17.0-linux-x64.tar.xz'
+            echo "Instalando Version LTS {v14.17.6}"
+            wget 'https://nodejs.org/dist/v14.17.6/node-v14.17.6-linux-x64.tar.xz'
             tar -xvf node-v14.17.0-linux-x64.tar.xz
             sudo cp -rf node-v14.17.0-linux-x64/* /usr/
             rm -rf  node-v14.17.0-linux-x64
         fi
         if [ $i = 2 ]
         then
-            echo "Instalando Version Current {v16.3.0}"
-            wget 'https://nodejs.org/dist/v14.17.0/node-v16.3.0-linux-x64.tar.xz'
-            tar -xvf node-v16.3.0-linux-x64.tar.xz
-            rm -f node-v16.3.0-linux-x64.tar.xz
-            sudo cp -r node-v16.3.0-linux-x64/* /usr/
-            rm -rf node-v16.3.0-linux-x64
+            echo "Instalando Version Current {v16.10.0}"
+            wget 'https://nodejs.org/dist/v14.17.0/node-v16.10.0-linux-x64.tar.xz'
+            tar -xvf node-v16.10.0-linux-x64.tar.xz
+            rm -f node-v16.10.0-linux-x64.tar.xz
+            sudo cp -r node-v16.10.0-linux-x64/* /usr/
+            rm -rf node-v16.10.0-linux-x64
         fi
     else
         echo "No se instalara o actualizara NodeJS"
